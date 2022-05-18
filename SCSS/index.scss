@@ -65,6 +65,9 @@ section[id="registerForm"] {
         input {
             padding-left: 40px;
             box-shadow: 0 5px 5px 0 rgba(0,0,0,0.3);
+            &:focus{
+                outline: none;
+            }
         }
     }
 
@@ -79,6 +82,10 @@ section[id="registerForm"] {
             background: linear-gradient(to right, #ff9900, #f06100);
             font-weight: 600;
             color: white;
+
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 }
