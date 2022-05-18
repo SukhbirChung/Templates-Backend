@@ -13,6 +13,10 @@ html {
 
 body {
     background-color: whitesmoke;
+    main{
+        max-width: 600px;
+        margin: auto;
+    }
 }
 
 section[id="logo"] {
