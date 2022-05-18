@@ -16,7 +16,7 @@ body {
 }
 
 section[id="logo"] {
-    height: 30vh;
+    height: 35vh;
     background: linear-gradient(#f06100, #ff9900);
     border-bottom-left-radius: 100px;
 
@@ -39,7 +39,7 @@ section[id="logo"] {
 }
 
 section[id="registerForm"] {
-    padding-block: 40px;
+    padding-block: 45px;
 
     div {
         width: 75%;
@@ -48,18 +48,19 @@ section[id="registerForm"] {
         img {
             width: 16px;
             position: absolute;
-            margin: 9px 0 0 12px;
+            margin: 12px 0 0 12px;
         }
 
         input, button {
             width: 100%;
-            height: 35px;
+            height: 40px;
             border: none;
             border-radius: 35px;
         }
 
         input {
-            padding-left: 35px;
+            padding-left: 40px;
+            box-shadow: 0 5px 5px 0 rgba(0,0,0,0.3);
         }
     }
 
@@ -78,6 +79,17 @@ section[id="registerForm"] {
     }
 }
 
-section[id="member"]{
+section[id="member"] {
+    p {
+        font-size: 0.6rem;
+        letter-spacing: 0px;
+        text-align: center;
 
+        a {
+            margin-left: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #f06100;
+        }
+    }
 }
