@@ -7,6 +7,13 @@
     <meta name="date" content="May 13, 2022" />
 
     <!--<link rel="icon" href="../Images/site-icon.png" type="image/icon type">-->
+    <!--Google Font - Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" href="../CSSReset.css" />
 
     <!--My Stylesheet-->
     <link rel="stylesheet" type="text/css" href="index.css" />
@@ -14,10 +21,39 @@
     <title>Register/Login Page</title>
 </head>
 <body>
-
     <main>
+        <section id="logo">
+            <div>
+                <img src="../Images/logo.svg" alt="Logo" />
+            </div>
+            <div>
+                <p>Register</p>
+            </div>
+        </section>
 
+        <section id="registerForm">
+            <form action="" method="post">
+                <div>
+                    <img src="../Images/fullname.svg"/>
+                    <input type="text" placeholder="Fullname" name="fullname" />
+                </div>
+                <div>
+                    <img src="../Images/email.svg"/>
+                    <input type="email" placeholder="Email" name="email" />
+                </div>
+                <div>
+                    <img src="../Images/password.svg"/>
+                    <input type="password" placeholder="Password" name="password" />
+                </div>
+                <div>
+                    <button type="submit">REGISTER</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="member">
+
+        </section>
     </main>
-
 </body>
 </html>
