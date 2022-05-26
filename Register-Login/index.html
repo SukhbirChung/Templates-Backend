@@ -38,16 +38,30 @@
         <section id="registerForm">
             <form method="post">
                 <div>
-                    <img src="../Images/fullname.svg"/>
-                    <input type="text" placeholder="Fullname" name="fullname" required/>
+                    <div class="dialog">
+                        <img src="../Images/arrow.png" />
+                        <ul>
+                            <li>
+                                Test
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div>
-                    <img src="../Images/email.svg"/>
-                    <input type="email" placeholder="Email" name="email" required/>
+                    <img src="../Images/fullname.svg" />
+                    <input type="text" placeholder="Fullname" name="fullname" required maxlength="50" />
                 </div>
                 <div>
-                    <img src="../Images/password.svg"/>
-                    <input type="password" placeholder="Password" name="password" required/>
+                    <img src="../Images/email.svg" />
+                    <input type="email" placeholder="Email" name="email" required />
+                </div>
+                <div>
+                    <img src="../Images/password.svg" />
+                    <input type="password" placeholder="Password" name="password" required />
+                </div>
+                <div>
+                    <img src="../Images/password.svg" />
+                    <input type="password" placeholder="Confirm Password" required />
                 </div>
                 <div>
                     <button type="submit">REGISTER</button>

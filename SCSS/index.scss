@@ -45,46 +45,80 @@ section[id="logo"] {
 section[id="registerForm"] {
     padding-block: 45px;
 
-    div {
-        width: 75%;
-        margin: auto;
+    form {
+        position: relative;
 
-        img {
-            width: 16px;
-            position: absolute;
-            margin: 12px 0 0 12px;
-        }
+        div:not(:first-child) {
+            width: 75%;
+            margin: auto;
 
-        input, button {
-            width: 100%;
-            height: 40px;
-            border: none;
-            border-radius: 35px;
-        }
+            img {
+                width: 16px;
+                position: absolute;
+                margin: 12px 0 0 12px;
+            }
 
-        input {
-            padding-left: 40px;
-            box-shadow: 0 5px 5px 0 rgba(0,0,0,0.3);
-            &:focus{
-                outline: none;
+            input, button {
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-radius: 35px;
+            }
+
+            input {
+                padding-left: 40px;
+                box-shadow: 0 5px 5px 0 rgba(0,0,0,0.3);
+
+                &:focus {
+                    outline: none;
+                }
             }
         }
-    }
 
-    div:nth-of-type(2){
-        margin-block: 15px;
-    }
+        div:nth-of-type(3), div:nth-of-type(4) {
+            margin-block: 15px;
+        }
 
-    div:last-child {
-        margin: 50px auto 0 auto;
+        > div:last-child {
+            margin: 50px auto 0 auto;
 
-        button {
-            background: linear-gradient(to right, #ff9900, #f06100);
-            font-weight: 600;
-            color: white;
+            button {
+                background: linear-gradient(to right, #ff9900, #f06100);
+                font-weight: 600;
+                color: white;
 
-            &:hover{
-                cursor: pointer;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > div:first-child {
+            position: absolute;
+            left: 20%;
+            display: none;
+
+            .dialog {
+                border-radius: 20px;
+                padding: 10px;
+                background: linear-gradient(to right, #f06100, #ff9900);
+                width: 250px;
+                margin: auto;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -9px;
+                    left: -9px;
+                    transform: rotate(-45deg);
+                }
+
+                ul {
+                    list-style: disc;
+                    list-style-position: inside;
+                    font-size: 0.7rem;
+                    color: white;
+                }
             }
         }
     }

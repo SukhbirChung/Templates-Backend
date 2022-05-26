@@ -1,7 +1,16 @@
 const form = document.querySelector('form');
+const inputs = form.querySelectorAll('input');
+const firstDiv = form.querySelector('div:first-child');
+
+for (const input of inputs) {
+    input.addEventListener('focus', () => {
+        firstDiv.style.display = "initial";
+        firstDiv.style.top = (input.offsetTop + 40).toString() + "px";
+    })
+}
+
 form.addEventListener('submit', (evt) => {
     evt.preventDefault();
-    const inputs = form.querySelectorAll('input');
     name = inputs[0].value;
     email = inputs[1].value;
     password = inputs[2].value;
@@ -18,3 +27,4 @@ form.addEventListener('submit', (evt) => {
             inputs[2].value = "";
         });
 });
+
